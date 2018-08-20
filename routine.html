@@ -1,0 +1,284 @@
+<html>
+    <head>
+
+        <style>
+        h1 {
+  font-size: 200%;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+/* Zebra striping */
+tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+th { 
+  background: #333; 
+  color: white; 
+  font-weight: bold; 
+}
+
+td, th { 
+  padding: 6px; 
+  border: 1px solid #ccc; 
+  text-align: left; 
+}
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table.responsive, .responsive thead, .responsive tbody, .responsive th, .responsive td, .responsive tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	.responsive thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	.responsive tr { border: 1px solid #ccc; }
+	
+	.responsive td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	.responsive td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	.responsive td:before { content: attr(data-table-header); }
+}
+
+.table-responsive .bootstrap {
+  min-height: .01%;
+  overflow-x: auto;
+}
+@media screen and (max-width: 767px) {
+  .table-responsive.bootstrap {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    border: 1px solid #ddd;
+  }
+  .table-responsive.bootstrap > .table {
+    margin-bottom: 0;
+  }
+  .table-responsive.bootstrap > .table > thead > tr > th,
+  .table-responsive.bootstrap > .table > tbody > tr > th,
+  .table-responsive.bootstrap > .table > tfoot > tr > th,
+  .table-responsive.bootstrap > .table > thead > tr > td,
+  .table-responsive.bootstrap > .table > tbody > tr > td,
+  .table-responsive.bootstrap > .table > tfoot > tr > td {
+    white-space: nowrap;
+  }
+  .table-responsive.bootstrap > .table-bordered {
+    border: 0;
+  }
+  .table-responsive.bootstrap > .table-bordered > thead > tr > th:first-child,
+  .table-responsive.bootstrap > .table-bordered > tbody > tr > th:first-child,
+  .table-responsive.bootstrap > .table-bordered > tfoot > tr > th:first-child,
+  .table-responsive.bootstrap > .table-bordered > thead > tr > td:first-child,
+  .table-responsive.bootstrap > .table-bordered > tbody > tr > td:first-child,
+  .table-responsive.bootstrap > .table-bordered > tfoot > tr > td:first-child {
+    border-left: 0;
+  }
+  .table-responsive.bootstrap > .table-bordered > thead > tr > th:last-child,
+  .table-responsive.bootstrap > .table-bordered > tbody > tr > th:last-child,
+  .table-responsive.bootstrap > .table-bordered > tfoot > tr > th:last-child,
+  .table-responsive.bootstrap > .table-bordered > thead > tr > td:last-child,
+  .table-responsive.bootstrap > .table-bordered > tbody > tr > td:last-child,
+  .table-responsive.bootstrap > .table-bordered > tfoot > tr > td:last-child {
+    border-right: 0;
+  }
+  .table-responsive.bootstrap > .table-bordered > tbody > tr:last-child > th,
+  .table-responsive.bootstrap > .table-bordered > tfoot > tr:last-child > th,
+  .table-responsive.bootstrap > .table-bordered > tbody > tr:last-child > td,
+  .table-responsive.bootstrap > .table-bordered > tfoot > tr:last-child > td {
+    border-bottom: 0;
+  }
+}
+        </style>
+
+        <title>DWIT Routine Sixth Semester</title>
+    </head>
+    <body>
+<h1><u>Weekly Class Schedule - Section 'B'</u></h1>
+<table class="table-responsive bootstrap">
+	  <thead>
+	    <tr>
+		      <th scope="col">Day</th>
+		      <th scope="col">SEC</th>
+		      <th scope="col">7:20 - 8:10</th>
+      <th scope="col">8:10 - 9:00</th>
+      <th scope="col">9:00 - 9:50</th>
+      <th scope="col">  </th>
+      <th scope="col">10:10 - 11:00</th>
+      <th scope="col">11:00 - 11:50</th>
+      <th scope="col">11:50 - 12:40</th>
+      <th scope="col">12:40 - 1:30</th>
+      <th scope="col">1:30 - 2:20</th>
+      <th scope="col">  </th>
+      <th scope="col">2:30 - 3:20</th>
+	    </tr>
+	  </thead>
+	  <tbody>
+	    <tr>
+		      <td>Monday</td>
+		      <td>B</td>
+		      <td style="background:purple">Compiler</td>
+      <td style="background:purple">Compiler</td>
+      <td style="background: orange">Software Engineering</td>
+      <td>  </td>
+      <td>Off Period</td>
+      <td style="background:yellow"> Web Technology</td>
+      <td style="background:yellow">Web Technology</td>
+      <td style="background:skyblue">English</td>
+      <td>Lunch</td>
+      <td>  </td>
+      <td>Off Period</td>
+        </tr>
+        
+        <tr>
+                <td>Tuesday</td>
+                <td>B</td>
+                <td style="background: orange">Software Engineering</td>
+        <td style="background:purple">Compiler</td>
+        <td style="background:green">Image Processing</td>
+        <td>  </td>
+        <td style="background:yellowgreen">Java</td>
+        <td style="background:yellowgreen">Java</td>
+        <td>Lunch</td>
+        <td style="background:skyblue">English</td>
+        <td>Off Period</td>
+        <td>  </td>
+        <td>Off Period</td>
+          </tr>
+
+          <tr>
+                <td>Wednesday</td>
+                <td>B</td>
+                <td style="background: orange">Software Engineering</td>
+        <td style="background: orange">Software Engineering</td>
+        <td style="background:purple">Compiler</td>
+        <td>  </td>
+        <td>Off Period</td>
+        <td>Lunch</td>
+        <td style="background:yellow">Web Technology</td>
+        <td>Off Period</td>
+        <td>Off Period</td>
+        <td>  </td>
+        <td>Off Period</td>
+          </tr>
+
+          <tr>
+                <td>Thursday</td>
+                <td>B</td>
+                <td style="background: orange">Software Engineering</td>
+        <td style="background:purple">Compiler</td>
+        <td style="background:green">Image Processing</td>
+        <td>  </td>
+        <td style="background:salmon">Real Time System</td>
+        <td style="background:salmon">Real Time System</td>
+        <td style="background:yellow">Web Technology</td>
+        <td>Off Period</td>
+        <td>Off Period</td>
+        <td>  </td>
+        <td>Off Period</td>
+          </tr>
+
+          <tr>
+                <td>Friday</td>
+                <td>B</td>
+                <td style="background: orange">Software Engineering</td>
+        <td style="background:green">Image Processing</td>
+        <td style="background:green">Image Processing</td>
+        <td>  </td>
+        <td colspan="2" style="text-align:center">Deertalk</td>
+        <td style="background:salmon">Real Time System</td>
+        <td>Lunch</td>
+        <td style="background:yellow">Web Technology</td>
+        <td>  </td>
+        <td style="background:yellow">Web Technology</td>
+          </tr>
+	 
+	  </tbody>
+</table>
+<br><br>
+<hr>
+<table border="1">
+    <tr>
+        <th colspan="5" style="text-align:center">TU COURSES</th>
+    </tr>
+    <tr>
+        <th>SUBJECTS</th>
+        <th>INSTRUCTOR</th>
+        <th>SUBJECTS</th>
+        <th colspan="2">INSTRUCTOR</th>
+    </tr>
+    <tr>
+        <td class="web" style="background:yellow">Web Technologies (Web)</td>
+        <td>Sudan Prajapati</td>
+        <td class="ip" style="background:green">Image Processiong</td>
+        <td colspan="2">Sanjeeb Panday/Suman Sharma</td>
+    </tr>
+    <tr>
+        <td class="se" style="background: orange">Software Engineering</td>
+        <td>Anil Dutta</td>
+    </tr>
+    <tr>
+        <td class="Real Time System" style="background:salmon">RTS</td>
+        <td>Santosh Dhungana</td>
+    </tr>
+    <tr>
+        <td class="com" style="background:purple">Compiler</td>
+        <td>Ramesh Parajuli</td>
+    </tr>
+    <tr>
+        <th colspan="5">DWIT CREDIT COURSES</th>
+    </tr>
+    <tr>
+        <th>SUBJECTS</th>
+        <th>INSTRUCTOR</th>
+        <th>SUBJECTS</th>
+        <th>INSTRUCTOR</th>
+        <th>Last Update</th>
+    </tr>
+    <tr>
+        <td class="eng" style="background:skyblue">Eng</td>
+        <td>Matthew Whiteman</td>
+        <td class="java" style="background:yellowgreen">Java Programming</td>
+        <td>Prakash Bhatta</td>
+        <td>23-Jul-18</td>
+    </tr>
+</table>
+
+<div style="text-align:center">
+    <p>Submitted by: <b>Suyog Shrestha</b></p>
+</div>
+</body>
+</html>
