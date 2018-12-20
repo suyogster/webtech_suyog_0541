@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <title>CSS Column Design</title>
+        <style>
+           .wrapper{
+            border: 1px solid black;
+            padding: 20px;
+            height: 1000px;
+            width: fit-content;
+        }
+        
+        .column{
+            float: left;
+            width: 50%;
+        
+             
+        }
+        #col1{
+            background-color: brown;
+            width: 450px;
+            height: 200px;
+            
+        }
+
+        #col2{
+            background-color: aqua;
+            width: 450px;
+            height:200px;
+            
+        }
+        
+        #header{
+            background-color: blanchedalmond;
+        }
+
+        #footer{
+            background-color: chartreuse
+        }
+
+        .row{
+            height: 200px;
+            
+        }
+        .table, th, td{
+        border: 1px solid black;
+        }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+        <!-- <table class="table">
+           <tr>
+               <th><h3>This is header row</h3></th>
+           </tr>
+
+           <tr>
+            <td colspan="2" id="col1">
+                <h3>Column 1</h3>
+            </td>
+            <td id="col2">
+                <h3>Column2</h3>
+            </td>
+           </tr>
+
+           <tr>
+               <tr>
+                   <td><h3>This is footer Row</h3></td>
+               </tr>
+           </tr>
+        </table> -->
+        
+            <div class="row">
+                <div class="column" id="header">
+                <h2>This is Header.</h2>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column" id="col1">
+                    <h3>Column1</h3>
+                </div>
+
+                <div class="column" id="col2">
+                        <h3>Column2</h3>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="column" id="footer">
+                    <h3>This is Footer.</h3>
+                </div>
+            </div>
+
+    </div>
+    </body>
+</html>

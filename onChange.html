@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>onChange Javascript</title>
+
+    <script>
+     /* INPUT TEXT_1 AND TEXT_2 VALUE TO TEXT_3 ON TEXT_1 KEYUP*/
+     $("#name").keyup(function() {
+        $("#uname").val($("#name").val() + " " + $("#uname").val()).change();
+    })
+
+    </script>
+</head>
+<body>
+
+    <div class="container">
+<form onclick="change()" method="POST">
+Username: <input type="text" name="name" id="name"><br>
+Username Typing: <input type="text" name="uname" id="uname"><br>
+
+Select Country: <select name="country" id="country">
+<option value="Nepal"></option>
+<option value="India"></option>
+</select>
+
+Country Chosen: <input type="text" name="cname" id="cname">
+
+</form>
+</div>
+</body>
+</html>
